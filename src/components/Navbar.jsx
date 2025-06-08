@@ -17,7 +17,7 @@ export default function Navbar() {
       <nav >
         <div className="flex  px-5 gap-5 lg:px-[auto] lg:gap-8 justify-around items-center mt-4">
             <div className='font-extrabold font-size-500'>ProSync Engineering Services</div>
-            <Image className="mr-auto "src="https://media.istockphoto.com/id/487067290/photo/ultra-high-vacuum-chamber.jpg?s=612x612&w=0&k=20&c=DnjB5xTHYHp7k3PXzna_HZ-f4lKH_vQ8NDoiuvSESpc=" width={150} height={200} alt="logo"/>
+            <Image className="mr-auto "src="https://media.istockphoto.com/id/487067290/photo/ultra-high-vacuum-chamber.jpg?s=612x612&w=0&k=20&c=DnjB5xTHYHp7k3PXzna_HZ-f4lKH_vQ8NDoiuvSESpc="  width={150} height={200}  alt="logo"/>
             
             <Link className="hidden md:flex  items-center gap-2"href='/register'>services  <GoChevronDown /></Link>
             <Link className="hidden lg:flex  items-center gap-2"href='/'>About <GoChevronDown /></Link>
