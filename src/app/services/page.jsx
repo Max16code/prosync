@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Yellowbox from '@/components/Yellowbox';
 import { CIcon } from '@coreui/icons-react';
-import { cilBrush , cilShieldAlt , cilCart , cilWeightlifitng } from '@coreui/icons';
+import { cilBrush, cilShieldAlt, cilCart, cilWeightlifitng } from '@coreui/icons';
 
 export default function Services() {
     return (
@@ -21,33 +21,54 @@ export default function Services() {
             </div>
 
             <div className='flex gap-20 pl-15 '>
-                <div className="bg-yellow-400 p-8 w-70 text-center shadow-lg mt-100 rounded-4xl flex flex-col items-center gap-4">
-                    <CIcon icon={cilBrush} size="lg" className="text-blue-500 w-12 h-12" />
+                
+                <div className="bg-yellow-400 p-0 w-70 text-center shadow-lg mt-100 rounded-3xl flex flex-col items-center gap-4">
+                    <img className='rounded-4xl' src="https://th.bing.com/th/id/OIP.fqKIslbFaE_JwnbdeLdgDwHaEQ?r=0&w=766&h=441&rs=1&pid=ImgDetMain" width={500} height={10} alt="p&id" />
                     <h2 className="text-2xl font-bold text-black">Process Design</h2>
                     <p className="text-black mt-2 max-w-xs">
                         Comprehensive process engineering solutions from conceptual design to detailed engineering for optimal efficiency and safety.
                     </p>
                 </div>
-                <div className=" bg-yellow-400 p-8 w-70 text-center shadow-lg mt-100 rounded-4xl flex flex-col items-center gap-4" >
-                    <CIcon icon={cilShieldAlt} size="lg" className="text-blue-500 w-12 h-12" />
+                <div className="bg-yellow-400 p-0 w-70 text-center shadow-lg mt-100 rounded-3xl flex flex-col items-center gap-4">
+                    <div className="w-full overflow-hidden rounded-xl">
+                        <img
+                            className="w-full object-contain"
+                            src="https://th.bing.com/th?id=OIF.MRpP1D1J2kzt%2byHlCRWW5Q&w=336&h=152&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+                            alt="Process Safety"
+                        />
+                    </div>
                     <h2 className="text-2xl font-bold text-black">Process Safety</h2>
-                    <p className="text-black mt-2">HAZOP studies, SIL assessments, and safety system design to ensure regulatory compliance and operational safety..</p>
-
+                    <p className="text-black">
+                        HAZOP studies, SIL assessments, and safety system design to ensure regulatory compliance and operational safety.
+                    </p>
                 </div>
 
-                <div className=" bg-yellow-400 p-8 w-70 text-center shadow-lg mt-100 rounded-4xl flex flex-col items-center gap-4" >
-                    <CIcon icon={cilCart} size="lg" className="text-blue-500 w-12 h-12" />
-                    <h2 className="text-2xl font-bold text-black">Equipment Design & Procurement</h2>
+
+                <div className=" bg-yellow-400 p-0 w-65 text-center shadow-lg mt-100 rounded-3xl flex flex-col items-center gap-4" >
+                    <div className='w-full overflow-hidden rounded-xl'>
+                        <img
+                            className='w-full object-contain'
+                            src="https://www.redriver.team/wp-content/uploads/elementor/thumbs/A-massive-separator-vessel-pipe-at-a-construction-site-with-a-laboring-worker-in-blue-overalls-and-a-hard-hat-qn6s8ww639ac994mhs5kwf1obhc5ra8dxyjtt22gkw.webp" alt="seperator vessel" />
+                    </div>
+                    <h2 className="text-2xl font-bold text-black mb-3">Equipment Design & Procurement</h2>
                     <p className="text-black mt-2">Custom equipment design, specification development, and vendor management for all process equipment needs.</p>
 
                 </div>
 
-                <div className=" bg-yellow-400 p-8 w-70 text-center shadow-lg mt-100 rounded-4xl flex flex-col items-center gap-4" >
-                    <CIcon icon={cilWeightlifitng} size="lg" className="text-blue-500 w-12 h-12" />
+                <div className=" bg-yellow-400 p-0 w-64 text-center shadow-lg mt-100 rounded-4xl flex flex-col items-center gap-4" >
+                    <div className='w-full overflow-hidden rounded-xl'>
+                        <img className='w-full object-contain'
+                            src="https://img.freepik.com/premium-photo/two-engineers-working-inside-oil-gas-refinery_179314-553.jpg" alt="support staff" />
+                    </div>
                     <h2 className="text-2xl font-bold text-black">Construction Support</h2>
                     <p className="text-black mt-2">On-site engineering support, commissioning assistance, and project management throughout construction phases.</p>
 
                 </div>
+
+<h2>heloo</h2>
+
+
+
             </div>
 
 
