@@ -65,13 +65,57 @@ export default function Services() {
 
                 </div>
 
-<h2>heloo</h2>
+
 
 
 
             </div>
 
+<div className='bg-black w-full h-[100vh]'>
 
+<div className='text-center mt-40'>
+    <h1 className='font-extrabold text-6xl'>Industries We Serve</h1>
+    <p className='text-2xl mt-10'>Specialized expertise across critcal process industries</p>
+</div>
+
+<div className='flex justify-center gap-20 mt-30'>
+ 
+ <div className='mt-4'>
+<div class="w-100 h-22 bg-yellow-500  text-white flex items-center justify-center rounded-lg shadow-lg">
+  Oil & Gas Refining
+</div>
+<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+  Natural Gas Processing
+</div>
+</div> 
+
+
+<div className='mb-20'>
+<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+  Petrochemicals
+</div>
+<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+  Offshore Operations
+</div>
+</div>
+
+
+<div>
+<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+  Chemical Manufacturing
+</div>
+<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+  Pipeline Systems
+</div>
+</div>
+
+
+
+</div>
+
+
+</div>
         </div>
+        
     );
 }
