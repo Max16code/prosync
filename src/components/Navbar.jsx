@@ -27,7 +27,7 @@ export default function Navbar() {
 
           <Link className="hidden md:flex  items-center gap-2" href='/services'>services  <GoChevronDown /></Link>
           <Link className="hidden lg:flex  items-center gap-2" href='/About'>About <GoChevronDown /></Link>
-          <Link className="hidden lg:flex  items-center gap-2" href='/Projects'>Projects <GoChevronDown /></Link>
+          <Link className="hidden lg:flex  items-center gap-2" href='/Project'>Project <GoChevronDown /></Link>
           <Link className="hidden lg:flex  items-center gap-2" href='/contact'>contact <GoChevronDown /></Link>
 
           <Link
