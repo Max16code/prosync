@@ -81,30 +81,30 @@ export default function Services() {
 <div className='flex justify-center gap-20 mt-30'>
  
  <div className='mt-4'>
-<div class="w-100 h-22 bg-yellow-500  text-white flex items-center justify-center rounded-lg shadow-lg">
+<div className="w-100 h-22 bg-yellow-500  text-white flex items-center justify-center rounded-lg shadow-lg">
   Oil & Gas Refining
 </div>
-<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+<div className="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
   Natural Gas Processing
 </div>
 </div> 
 
 
 <div className='mb-20'>
-<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+<div className="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
   Petrochemicals
 </div>
-<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+<div className="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
   Offshore Operations
 </div>
 </div>
 
 
 <div>
-<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+<div className="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
   Chemical Manufacturing
 </div>
-<div class="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+<div className="w-100 h-22 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
   Pipeline Systems
 </div>
 </div>

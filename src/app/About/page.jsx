@@ -34,14 +34,14 @@ export default function page() {
 </div>
 
 <div className='mb-20'>
-<div class="w-165 h-100 bg-yellow-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
-<div className='flex-col '>
+<div className="w-165 h-100 bg-amber-500 text-white flex items-center justify-center rounded-lg shadow-lg mt-4">
+<div className='flex-col flex-1 pl-4 '>
   <h1 className='text-4xl mb-5 '>Our Expertise</h1>
-  <p className='mb-2 flex'><BsCheck2Circle />P&ID Development & Design Reviews</p>
-  <p className='mb-2 flex'><BsCheck2Circle className='mt-0.5' />HAZOP & Process Safety Management</p>
-  <p className='mb-2 flex'><BsCheck2Circle className='mt-0.5'/>Equipment Sizing & Specification</p>
-  <p className='mb-2 flex'><BsCheck2Circle className='mt-0.5'/>Construction & Commissioning Support</p>
-  <p className='mb-2 flex'><BsCheck2Circle className='mt-0.5'/>Regulatory Compliance & Permitting</p>
+  <p className='mb-2 flex gap-2'><BsCheck2Circle className='text-2xl text-black'/>P&ID Development & Design Reviews</p>
+  <p className='mb-2 flex gap-2'><BsCheck2Circle className='mt-0.5 text-2xl text-black' />HAZOP & Process Safety Management</p>
+  <p className='mb-2 flex gap-2'><BsCheck2Circle className='mt-0.5 text-2xl text-black'/>Equipment Sizing & Specification</p>
+  <p className='mb-2 flex gap-2'><BsCheck2Circle className='mt-0.5 text-2xl text-black'/>Construction & Commissioning Support</p>
+  <p className='mb-2 flex gap-2'><BsCheck2Circle className='mt-0.5 text-2xl text-black'/>Regulatory Compliance & Permitting</p>
   </div>
 </div>
 </div>
