@@ -10,7 +10,7 @@ export default function page() {
      </div>
      <p className='mt-5  mb-12 font-extralight text-2xl '>Examples of our successful engineering solutions</p>
  
- <div class="w-full  border-green-300 border-1"></div>
+ <div className="w-full  border-green-300 border-1"></div>
 
     
 <div className='flex gap-30 mt-20'>
