@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <div className="w-full shadow-md">
       {/* Top Bar */}
-      <div className="w-full h-10 bg-blue-700 text-white text-center flex justify-center items-center px-2">
+      <div className="w-full h-10 bg-blue-700 text-black text-center flex justify-center items-center px-2">
         <h3 className="text-xs sm:text-sm font-extrabold tracking-wide">
           WELCOME TO PROSYNC ENGINEERING SERVICES
         </h3>
@@ -36,7 +36,7 @@ export default function Navbar() {
               height={60}
               alt="logo"
             />
-            <div className="font-extrabold text-lg sm:text-xl">
+            <div className="font-extrabold text-black text-lg sm:text-xl">
               ProSync Engineering Services
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Links */}
-          <div className="hidden lg:flex items-center gap-6 text-sm font-medium">
+          <div className="hidden lg:flex items-center text-black gap-6 text-sm font-medium">
             <Link href="/services" className="flex items-center gap-1">Services <GoChevronDown /></Link>
             <Link href="/About" className="flex items-center gap-1">About <GoChevronDown /></Link>
             <Link href="/Project" className="flex items-center gap-1">Project <GoChevronDown /></Link>
