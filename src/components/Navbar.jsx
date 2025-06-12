@@ -30,13 +30,13 @@ export default function Navbar() {
           <Link className="hidden lg:flex  items-center gap-2" href='/Project'>Project <GoChevronDown /></Link>
           <Link className="hidden lg:flex  items-center gap-2" href='/contact'>contact <GoChevronDown /></Link>
 
-          <Link
+          {/* <Link
             className="hidden md:flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
             href="/Consults"
           >
             Consults
             <CIcon icon={cilMagnifyingGlass} size="sm" className="text-blue-500 w-4 h-4" />
-          </Link>
+          </Link> */}
 
         </div>
       </nav>
