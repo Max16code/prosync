@@ -1,47 +1,76 @@
 "use client"
 
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { FaArrowRight } from "react-icons/fa6";
-import { LuArrowUpRight } from "react-icons/lu";
-import { GoChevronDown } from "react-icons/go";
-import { CIcon } from '@coreui/icons-react';
-import { cilMagnifyingGlass } from '@coreui/icons';
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { GoChevronDown } from 'react-icons/go';
+import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
 
 
 
+
+    
 
 export default function Navbar() {
-  return (
-    <div>
-      <div className="w-full h-10 bg-blue-700 text-center flex justify-center items-center gap-4">
-        <h3 className='font-extrabold'> WELCOME TO PROSYNC ENGINEERING SERVICES </h3>
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  return (
+    <div className="w-full shadow-md">
+      {/* Top Bar */}
+      <div className="w-full h-10 bg-blue-700 text-white text-center flex justify-center items-center px-2">
+        <h3 className="text-xs sm:text-sm font-extrabold tracking-wide">
+          WELCOME TO PROSYNC ENGINEERING SERVICES
+        </h3>
       </div>
 
-      <nav >
-        <div className="flex  px-5 gap-5 lg:px-[auto] lg:gap-8 justify-around items-center mt-4">
-          <div className='font-extrabold font-size-800'>ProSync Engineering Services</div>
-          <Image className="mr-auto rounded-3xl " src="https://media.istockphoto.com/id/487067290/photo/ultra-high-vacuum-chamber.jpg?s=612x612&w=0&k=20&c=DnjB5xTHYHp7k3PXzna_HZ-f4lKH_vQ8NDoiuvSESpc=" width={150} height={200} alt="logo" />
+      {/* Navbar */}
+      <nav className="bg-white px-4 sm:px-6 lg:px-10 py-4">
+        <div className="flex items-center justify-between">
+          {/* Company Info */}
+          <div className="flex items-center gap-4">
+            <Image
+              className="rounded-3xl object-cover"
+              src="https://media.istockphoto.com/id/487067290/photo/ultra-high-vacuum-chamber.jpg?s=612x612&w=0&k=20&c=DnjB5xTHYHp7k3PXzna_HZ-f4lKH_vQ8NDoiuvSESpc="
+              width={60}
+              height={60}
+              alt="logo"
+            />
+            <div className="font-extrabold text-lg sm:text-xl">
+              ProSync Engineering Services
+            </div>
+          </div>
 
-          <Link className="hidden md:flex  items-center gap-2" href='/services'>services  <GoChevronDown /></Link>
-          <Link className="hidden lg:flex  items-center gap-2" href='/About'>About <GoChevronDown /></Link>
-          <Link className="hidden lg:flex  items-center gap-2" href='/Project'>Project <GoChevronDown /></Link>
-          <Link className="hidden lg:flex  items-center gap-2" href='/contact'>contact <GoChevronDown /></Link>
-
-          {/* <Link
-            className="hidden md:flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
-            href="/Consults"
+          {/* Hamburger Button */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="lg:hidden text-2xl text-gray-800"
           >
-            Consults
-            <CIcon icon={cilMagnifyingGlass} size="sm" className="text-blue-500 w-4 h-4" />
-          </Link> */}
+            {menuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
+          </button>
 
+          {/* Desktop Links */}
+          <div className="hidden lg:flex items-center gap-6 text-sm font-medium">
+            <Link href="/services" className="flex items-center gap-1">Services <GoChevronDown /></Link>
+            <Link href="/About" className="flex items-center gap-1">About <GoChevronDown /></Link>
+            <Link href="/Project" className="flex items-center gap-1">Project <GoChevronDown /></Link>
+            <Link href="/contact" className="flex items-center gap-1">Contact <GoChevronDown /></Link>
+          </div>
         </div>
-      </nav>
 
-      {/* hero section */}
+        {/* Mobile Dropdown */}
+        {menuOpen && (
+          <div className="lg:hidden mt-4 flex flex-col gap-3 text-sm font-medium">
+            <Link href="/services" className="block">Services</Link>
+            <Link href="/About" className="block">About</Link>
+            <Link href="/Project" className="block">Project</Link>
+            <Link href="/contact" className="block">Contact</Link>
+          </div>
+        )}
+      </nav>
     </div>
-  )
+  );
 }
+
+  
+

@@ -1,65 +1,45 @@
 // components/ContactForm.jsx
-export default function ContactForm() {
+export default function Contactform() {
   return (
     <form
-      action="https://formsubmit.co/info@prosync-en.com"
+      action="https://formspree.io/f/yourFormID" // Replace with your real ID
       method="POST"
-      className="max-w-xl mx-auto p-4 space-y-4 bg-gray-100 rounded-md shadow"
+      className="max-w-xl mx-auto p-4 space-y-4 bg-white shadow rounded"
     >
-      <h2 className="text-2xl font-bold text-center">GET STARTED</h2>
-      <p className="text-center text-gray-700">
-        Save money, reduce risk, and speed completion of your project with Eichleay. Contact us to learn how our talented team of versatile professionals could help you.
-      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label className="block text-sm font-medium">First Name</label>
+          <input type="text" name="firstName" required className="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium">Last Name</label>
+          <input type="text" name="lastName" required className="w-full border p-2 rounded" />
+        </div>
+      </div>
 
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://prosync-en.com/thank-you" />
+      <div>
+        <label className="block text-sm font-medium">Phone Number</label>
+        <input type="tel" name="phone" required className="w-full border p-2 rounded" />
+      </div>
 
-      <input
-        type="text"
-        name="firstName"
-        placeholder="First Name"
-        className="w-full border p-2 rounded"
-        required
-      />
+      <div>
+        <label className="block text-sm font-medium">Email</label>
+        <input type="email" name="email" required className="w-full border p-2 rounded" />
+      </div>
 
-      <input
-        type="text"
-        name="lastName"
-        placeholder="Last Name"
-        className="w-full border p-2 rounded"
-        required
-      />
+      <div>
+        <label className="block text-sm font-medium">Message</label>
+        <textarea name="message" required rows="5" className="w-full border p-2 rounded" />
+      </div>
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Your email"
-        className="w-full border p-2 rounded"
-        required
-      />
-
-      <input
-        type="tel"
-        name="phone"
-        placeholder="Phone Number"
-        className="w-full border p-2 rounded"
-      />
-
-      <textarea
-        name="message"
-        placeholder="Enter your message..."
-        maxLength={500}
-        rows={5}
-        className="w-full border p-2 rounded"
-        required
-      />
-      <div className="text-right text-sm text-gray-500">0 / 500</div>
+      {/* Optional redirect on success */}
+      <input type="hidden" name="_redirect" value="/thank-you" />
 
       <button
         type="submit"
-        className="w-full bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
       >
-        GET IN TOUCH
+        Send Message
       </button>
     </form>
   );
